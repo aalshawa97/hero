@@ -9,6 +9,8 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name} welcome to Hero!')  # Press Ctrl+F8 to toggle the breakpoint.
     print(f'Items you need: Sword, Armor, Shield, Medicine')
+    #Populate tuple
+    inventory = ("sword", "armor", "shield", "medicine")
     if not inventory:
         print("You are empty-handed.")
     input("\nPress the enter key to continue.")
