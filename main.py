@@ -14,12 +14,12 @@ def print_hi(name):
     display_inventory(inventory)
 
     while True:
-        user_input = input("Enter an index number for an item in the inventory (or press Enter to exit): ")
+        user_input = input("Enter an index number (0-3) for an item in the inventory (or press Enter to exit): ")
         if user_input == "":
             break
         try:
             index = int(user_input)
-            item = inventory[index - 1]
+            item = inventory[index]
             print("Item at index", index, "is:", item)
         except (ValueError, IndexError):
             print("Invalid input or index out of range. Please try again.")
