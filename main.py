@@ -11,8 +11,28 @@ def print_hi(name):
     print(f'Items you need: Sword, Armor, Shield, Medicine')
     #Populate tuple
     inventory = ("sword", "armor", "shield", "medicine")
+    print("Your items:\t")
+    for item in inventory:
+        print(item)
+    input("Press Enter key to continue")
+    #Get the length of items in the inventory
+    print("You have", len(inventory), "in your inventory")
+    if "medicine" in inventory:
+        print("\nYou have medicine!")
+    if "shield" in inventory:
+        print("\nYou have a shield!")
+    if "armor" in inventory:
+        print("\nYou have armor!")
+    if "sword" in inventory:
+        print("\nYou have a sword!")
     if not inventory:
         print("You are empty-handed.")
+    #Display item
+    #try:
+    #    index = int(input("\nEnter an index number for an item in the inventory:\t"))
+    #except ValueError:
+    #    print("In index, ", index, "is:\t", inventory[index - 1])
+
     input("\nPress the enter key to continue.")
 
 # Press the green button in the gutter to run the script.
