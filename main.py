@@ -13,8 +13,15 @@ def print_hi(name):
     inventory = ["sword", "armor", "shield", "medicine"]
     display_inventory(inventory)
 
+    print('You have found a gold treasure chest, adding the items to your inventory')
+
+    inventory.append("axe")
+    inventory.append("arrow")
+    inventory.append("bow")
+    display_inventory(inventory)
+
     while True:
-        user_input = input("Enter an index number (0-3) for an item in the inventory (or press Enter to exit): ")
+        user_input = input("Enter an index number (0-6) for an item in the inventory (or press Enter to exit): ")
         if user_input == "":
             break
         try:
